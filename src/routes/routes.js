@@ -12,6 +12,7 @@ import Favourites from '~/pages/Favourites';
 import Saved from '~/pages/Saved';
 
 import Profile from '~/pages/Profile';
+import Setting from '~/pages/Setting';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 import Program from '~/pages/Program';
@@ -30,6 +31,7 @@ const publicRoutes = [
     { path: config.routes.mine, component: Recent },
     //
     { path: config.routes.profile, component: Profile },
+    { path: config.routes.setting, component: Setting },
     { path: config.routes.upload, component: Upload, layout: HeaderOnly },
     { path: config.routes.search, component: Search, layout: null },
 ];

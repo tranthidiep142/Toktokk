@@ -76,8 +76,8 @@ function Header() {
         },
         {
             icon: <FontAwesomeIcon icon={faGear} />,
-            title: 'Settings',
-            to: '/settings',
+            title: 'Setting',
+            to: '/setting',
         },
         ...MENU_ITEMS,
         {

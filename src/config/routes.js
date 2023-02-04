@@ -9,6 +9,7 @@ const routes = {
     saved: '/saved',
     mine: '/mine',
     profile: '/@:nickname',
+    setting: '/setting',
     upload: '/upload',
     search: '/search',
 };
