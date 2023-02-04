@@ -1,0 +1,21 @@
+.footer {
+    border-top: 1px solid var(--grey-color);
+    color: var(--grey-color);
+    font-size: 14px;
+
+    .footer-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4px;
+    }
+
+    .item {
+        margin: 4px 16px;
+
+        &:hover,
+        &:active {
+            color: var(--primary);
+            cursor: pointer;
+        }
+    }
+}

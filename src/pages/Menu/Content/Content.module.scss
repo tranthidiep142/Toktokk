@@ -1,0 +1,77 @@
+.wrapper {
+    width: min-content;
+    display: inline-block;
+    margin-bottom: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 234px;
+    height: 416px;
+    background-size: contain;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video {
+    border-radius: 5px;
+    height: auto;
+}
+
+.title {
+    line-height: 120%;
+    margin-top: 10px;
+    //limit-row;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hashtag {
+    color: var(--grey-color);
+    margin-bottom: 10px;
+    font-size: var(--caption);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc {
+    font-size: var(--caption);
+    color: var(--grey-color);
+    display: flex;
+
+    span {
+        margin-right: 5px;
+    }
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.creator-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.creator-name {
+    margin-left: 5px;
+}
