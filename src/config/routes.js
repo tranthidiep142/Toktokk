@@ -12,6 +12,7 @@ const routes = {
     setting: '/setting',
     upload: '/upload',
     search: '/search',
+    logout: '/logout',
 };
 
 export default routes;

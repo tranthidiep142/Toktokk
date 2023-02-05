@@ -13,9 +13,10 @@ import Saved from '~/pages/Saved';
 
 import Profile from '~/pages/Profile';
 import Setting from '~/pages/Setting';
-import Upload from '~/pages/Upload';
+import Upload from '~/pages/Logout';
 import Search from '~/pages/Search';
 import Program from '~/pages/Program';
+import Logout from '~/pages/Logout';
 
 // Public routes
 const publicRoutes = [
@@ -34,6 +35,7 @@ const publicRoutes = [
     { path: config.routes.setting, component: Setting },
     { path: config.routes.upload, component: Upload, layout: HeaderOnly },
     { path: config.routes.search, component: Search, layout: null },
+    { path: config.routes.logout, component: Logout, layout: null },
 ];
 
 const privateRoutes = [];

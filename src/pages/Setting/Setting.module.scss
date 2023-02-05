@@ -2,6 +2,18 @@
     width: 80%;
     margin: 20px auto;
 }
+.heading {
+    font-size: var(--heading4);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 10px 20px;
+}
 
 .title {
     font-size: 20px;
@@ -24,20 +36,11 @@
     padding: 10px 0 10px 50px;
 }
 
-// .child {
-//     &:hover,
-//     &:active,
-//     &:focus {
-//         color: var(--primary);
-//         cursor: pointer;
-//     }
-// }
-
 .first.childs {
     .child {
         display: flex;
         justify-content: space-between;
-        padding: 5px 10px 5px 0;
+        padding: 10px 10px 10px 0;
     }
 
     input.child {
@@ -45,7 +48,19 @@
     }
 }
 
-.second {
+.third.childs {
+    .child {
+        padding: 10px 10px 5px 0;
+        cursor: pointer;
+    }
+
+    input.child {
+        display: none;
+    }
+}
+
+.second,
+.third {
     .switch {
         display: none;
     }
@@ -74,9 +89,12 @@
         background-color: unset;
         width: fit-content;
         font-size: 16px;
+        color: #fff;
+        background-color: var(--primary);
     }
 
-    .child.clickable {
+    .child.clickable,
+    input.child {
         cursor: pointer;
         transition: all ease-in 0.2s;
 
