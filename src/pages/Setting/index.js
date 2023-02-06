@@ -102,7 +102,7 @@ function Setting() {
                                     </label>
                                 </li>
                             ))}
-                            <input className={cx('child')} type="text" placeholder="+ ADD"></input>
+                            <input className={cx('child')} type="text" placeholder="+ Add"></input>
                         </ul>
                     )}
                 </div>
