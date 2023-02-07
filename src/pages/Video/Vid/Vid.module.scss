@@ -102,7 +102,7 @@
 .sub-icon {
     width: 26px;
     height: 26px;
-    margin-right: 6px;
+    margin-right: 8px;
     transition: all ease-in 0.2s;
 
     &:first-child {
@@ -115,6 +115,62 @@
         transform: scale(1.2);
     }
 }
+
+//SAVE ICON
+
+.save-icon {
+    position: relative;
+    transition: all ease-in 0.2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 235px;
+        height: 70px;
+        z-index: -1;
+    }
+
+    &:hover .playlists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.playlists {
+    position: absolute;
+    display: none;
+    top: -30px;
+    left: 40px;
+}
+
+.playlist {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    transition: all ease-in 0.2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.addPlaylist {
+    padding-left: 5px;
+    font-size: 12px;
+    height: 30px;
+    width: 70px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+}
+//
 
 .info-container {
     // position: relative;

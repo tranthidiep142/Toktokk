@@ -47,7 +47,12 @@ function Logout() {
 
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('subheading')}>Let's choose</div>
+            <div className={cx('subheading')}>
+                Let's choose
+                <a href="/">
+                    <img className={cx('close-icon')} src="/imgs/closeIcon.svg" alt="close icon"></img>
+                </a>
+            </div>
             <div className={cx('heading')}>YOUR INTERESTING TOPICS</div>
             <div className={cx('heading-desc')}>For the best video recommendations</div>
 

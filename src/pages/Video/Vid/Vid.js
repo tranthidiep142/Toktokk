@@ -5,6 +5,16 @@ import React, { useState } from 'react';
 const cx = classNames.bind(styles);
 
 function Vid({ videoImg, src, title, hashtag, views, time, creatorImg, creatorName }) {
+    const [reactSelected, setReactSelected] = useState(false);
+    const handleReactClick = () => {
+        setReactSelected(!reactSelected);
+    };
+
+    const [saveSelected, setSaveSelected] = useState(false);
+    const handleSaveClick = () => {
+        setSaveSelected(!saveSelected);
+    };
+
     const [isPlaying, setIsPlaying] = useState(false);
 
     return (
@@ -22,17 +32,33 @@ function Vid({ videoImg, src, title, hashtag, views, time, creatorImg, creatorNa
                 )}
 
                 <div className={cx('video-icons')}>
-                    <div className={cx('icon', 'react-icon')}>
-                        <img src="/imgs/defaultReactIcon.svg" alt="react icons" />
+                    <div className={cx('icon', 'react-icon')} onClick={handleReactClick}>
+                        <img
+                            src={reactSelected ? '/imgs/selectedIcon.svg' : '/imgs/defaultReactIcon.svg'}
+                            alt="react icons"
+                        />
+
                         <div className={cx('sub-react-icons')}>
                             <img className={cx('sub-icon')} src="/imgs/hahaIcon.svg" alt="react icons" />
                             <img className={cx('sub-icon')} src="/imgs/sadIcon.svg" alt="react icons" />
                             <img className={cx('sub-icon')} src="/imgs/angryIcon.svg" alt="react icons" />
-                            <img className={cx('sub-icon')} src="/imgs/defaultReactIcon.svg" alt="react icons" />
+                            {/* <img className={cx('sub-icon')} src="/imgs/defaultReactIcon.svg" alt="react icons" /> */}
                         </div>
                     </div>
                     <img className={cx('icon')} src="/imgs/cmtIcon.svg" alt="react icons" />
-                    <img className={cx('icon', 'save-icon')} src="/imgs/saveIcon.svg" alt="react icons" />
+
+                    <div className={cx('icon', 'save-icon')} onClick={handleSaveClick}>
+                        <img
+                            src={saveSelected ? '/imgs/saveIcon.svg' : '/imgs/saveSelectedIcon.svg'}
+                            alt="react icons"
+                        />
+                        <div className={cx('playlists')}>
+                            <img className={cx('playlist')} src="/imgs/studyPlaylist.svg" alt="studyPlaylist img" />
+                            <img className={cx('playlist')} src="/imgs/programPlaylist.svg" alt="studyPlaylist img" />
+                            <img className={cx('playlist')} src="/imgs/travelPlaylist.svg" alt="studyPlaylist img" />
+                            <input className={cx('addPlaylist')} type="text" placeholder="+ Add"></input>
+                        </div>
+                    </div>
                     <img className={cx('icon')} src="/imgs/shareIcon.svg" alt="react icons" />
                 </div>
             </div>
