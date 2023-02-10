@@ -1,7 +1,5 @@
 import classNames from 'classnames/bind';
 import styles from './Content.module.scss';
-// import useScript from '../../../hooks/useScript';
-// import React, { useEffect } from 'react';
 import React, { useState } from 'react';
 
 const cx = classNames.bind(styles);
@@ -18,7 +16,7 @@ function ContentItem({ videoImg, src, title, hashtag, views, time, creatorImg, c
                 }}
             >
                 {isPlaying && (
-                    <video className={cx('video')} width="234" height="416" autoPlay controls>
+                    <video className={cx('video')} width="259" height="460" autoPlay controls>
                         <source src={src} type="video/mp4"></source>
                     </video>
                 )}

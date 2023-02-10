@@ -23,7 +23,7 @@ function Footer() {
                 <span className={cx('item')}>Copyright</span>
             </div>
             <div className={cx('footer-section')}>
-                <span className={cx('item')}>Coppy right - Toktok 2023 Team 1 giao tiep nguoi may</span>
+                <span className={cx('item')}>Toktok 2023 - Giao tiep nguoi may</span>
             </div>
         </div>
     );

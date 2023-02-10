@@ -53,9 +53,31 @@ function Vid({ videoImg, src, title, hashtag, views, time, creatorImg, creatorNa
                             alt="react icons"
                         />
                         <div className={cx('playlists')}>
-                            <img className={cx('playlist')} src="/imgs/studyPlaylist.svg" alt="studyPlaylist img" />
-                            <img className={cx('playlist')} src="/imgs/programPlaylist.svg" alt="studyPlaylist img" />
-                            <img className={cx('playlist')} src="/imgs/travelPlaylist.svg" alt="studyPlaylist img" />
+                            <div className={cx('playlist-wrapper')}>
+                                <img className={cx('playlist')} src="/imgs/studyPlaylist.svg" alt="studyPlaylist img" />
+                                <span>Saved</span>
+                            </div>
+
+                            <div className={cx('playlist-wrapper')}>
+                                <img
+                                    className={cx('playlist')}
+                                    src="/imgs/programPlaylist.svg"
+                                    alt="programPlaylist img"
+                                />
+                                <span>Program</span>
+                            </div>
+
+                            <div className={cx('playlist-wrapper')}>
+                                <img
+                                    className={cx('playlist')}
+                                    src="/imgs/travelPlaylist.svg"
+                                    alt="travelPlaylist img"
+                                />
+                                <span>Travel</span>
+                            </div>
+
+                            {/* <img className={cx('playlist')} src="/imgs/programPlaylist.svg" alt="studyPlaylist img" />
+                            <img className={cx('playlist')} src="/imgs/travelPlaylist.svg" alt="studyPlaylist img" /> */}
                             <input className={cx('addPlaylist')} type="text" placeholder="+ Add"></input>
                         </div>
                     </div>

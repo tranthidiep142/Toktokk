@@ -58,6 +58,9 @@ function Setting() {
 
     return (
         <div className={cx('wrapper')}>
+            <a href="/">
+                <img className={cx('close-icon')} src="/imgs/closeIcon.svg" alt="close icon"></img>
+            </a>
             <div className={cx('heading')}>Setting</div>
             <div className={cx('item')}>
                 <p className={cx('desc')}>Auto forward video</p>

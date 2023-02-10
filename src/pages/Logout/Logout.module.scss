@@ -1,28 +1,19 @@
 .wrapper {
     width: 80%;
-    margin: 20px auto;
+    margin: 50px auto;
     position: relative;
 }
 
-// .wrapper::after {
-//     background-image: url('/public/imgs/closeIcon.svg');
-//     width: 30px;
-//     height: 30px;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-// }
-
 .close-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    float: right;
 }
 
 .subheading {
     font-size: var(--heading5);
     font-weight: 600;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 60px;
 }
 
 .heading {
@@ -31,7 +22,7 @@
 }
 
 .heading-desc {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .childs {
@@ -80,7 +71,7 @@ button.child {
 .action {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 button.child {
@@ -88,6 +79,7 @@ button.child {
     border-style: dashed;
     box-shadow: 1px 3px 3px var(--grey-color);
     padding: 15px 45px;
+    margin: 20px;
     font-size: var(--title);
     border-radius: 50px;
 
